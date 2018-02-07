@@ -8,9 +8,13 @@ def talker():
     rospy.init_node("test node")
 
     test_message = String()
-    while(1):
-        test_message = 1
+    while not rospy.is_shutdown():
+        rospy.loginfo('Testing Publisher')
         test_pub.publish('test')
         rospy.sleep(1)
 
 if __name__ =='__main__':
+    try:
+        talker()
+    except rospy.ROSInterruptException:
+        raise
