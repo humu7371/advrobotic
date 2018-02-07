@@ -1,0 +1,8 @@
+prefix=/home/hx/homework2_ws/install
+
+Name: hmwk2
+Description: Description of hmwk2
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/hx/homework2_ws/install/lib 
+Requires: 
